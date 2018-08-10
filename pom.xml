@@ -65,6 +65,8 @@
                 </executions>
                 <configuration>
                     <format>${dependency-check-format}</format>
+                    <skipProvidedScope>true</skipProvidedScope>
+                    <failBuildOnCVSS>8</failBuildOnCVSS>
                 </configuration>
             </plugin>
         </plugins>
