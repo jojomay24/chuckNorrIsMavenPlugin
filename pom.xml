@@ -9,6 +9,7 @@
     <url>http://maven.apache.org</url>
     <properties>
         <dependency-check-format>HTML</dependency-check-format>
+        <dependency-check-fail-build-on-cvss>7</dependency-check-fail-build-on-cvss>
     </properties>
     <dependencies>
         <dependency>
@@ -66,7 +67,7 @@
                 <configuration>
                     <format>${dependency-check-format}</format>
                     <skipProvidedScope>true</skipProvidedScope>
-                    <failBuildOnCVSS>7</failBuildOnCVSS>
+		    <failBuildOnCVSS>${dependency-check-fail-build-on-cvss}</failBuildOnCVSS>
                 </configuration>
             </plugin>
         </plugins>
