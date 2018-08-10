@@ -7,6 +7,9 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>chuckNorris-maven-plugin Maven Mojo</name>
     <url>http://maven.apache.org</url>
+    <properties>
+        <dependency-check-format>HTML</dependency-check-format>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.apache.maven</groupId>
@@ -60,6 +63,9 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <format>${dependency-check-format}</format>
+                </configuration>
             </plugin>
         </plugins>
     </build>
